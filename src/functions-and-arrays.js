@@ -112,7 +112,7 @@ function uniquifyArray(myArr) {
   else {
     let newArr = [];
     for (let p = 0; p < myArr.length; p++) {
-      if (newArr.indexOf(myArr[p]) === -1) {
+      if (!newArr.includes(myArr[p])) { //if the new array does not include a word from the original array, push it
           newArr.push(myArr[p])
         }
     }
